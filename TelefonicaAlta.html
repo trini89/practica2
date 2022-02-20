@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de alta en Telfónica</title> 
+    <title>Formulario de alta en Telfónica</title>
     <style>
         h1 {
             text-align: center;
@@ -16,199 +17,205 @@
 
 
 <body>
-    
-<h1>Bienvenid@ al formulario de alta  	 &#9742;</h1>
 
-<form action="my-first-form-page" method="post" target="_blank"> 
- <fieldset>
-   <legend> Datos personales </legend>    
+    <h1>Bienvenid@ al formulario de alta &#9742;</h1>
+
+    <form action="my-first-form-page" method="post" target="_blank">
+        <fieldset>
+            <legend> Datos personales </legend>
 
 
-<p><label>Nombre:    <input type="text" name="nombre" maxlength="30"/> </label> </p> 
-<p><label>Apellidos: <input type="text" name="Apellidos" maxlength="60" /> </label></p>
-<p><label>Dirección: <input type="text" name="direccion" maxlength="60" /> </label></p>
-<p><label>Código postal: <input type="text" id="entradaCP" name="codigo postal" maxlength="5" /></label> </p>
-<p><label>Localidad: <input type="text" id="salidaLocalidad" maxlength="15" /> </label> </p>
+            <p><label>Nombre: <input type="text" name="nombre" maxlength="30" /> </label> </p>
+            <p><label>Apellidos: <input type="text" name="Apellidos" maxlength="60" /> </label></p>
+            <p><label>Dirección: <input type="text" name="direccion" maxlength="60" /> </label></p>
+            <p><label>Código postal: <input type="text" id="entradaCP" name="codigo postal" maxlength="5" /></label>
+            </p>
+            <p><label>Localidad: <input type="text" id="salidaLocalidad" maxlength="15" /> </label> </p>
 
-</fieldset>
+        </fieldset>
 
-<fieldset>
-<legend>Tipo de contrato</legend>
+        <fieldset>
+            <legend>Tipo de contrato</legend>
 
-<p><label> Nuevo contrato <input type="radio" checked ></label> <label> Portabilidad <input type="radio" value="Portabilidad" ></label> <label> Cambio de contrato <input type="radio" value="Cambio de contrato"></label>
-<p>Elija la compañía actual: <select name="compañia"> <option>Movistar</option> <option>Orange</option> <option>Vodafone</option><option>No tengo compañia</option> <option>Yoigo</option> </select> </p>
-<p>Sin compañía, elija una: <select name="sin compañia"> <option>Movistar</option> <option>Orange</option> <option>Vodafone</option> <option>Yoigo</option> </select></p>
-</fieldset>
+            <p><label> Nuevo contrato <input type="radio" checked></label> <label> Portabilidad <input type="radio"
+                        value="Portabilidad"></label> <label> Cambio de contrato <input type="radio"
+                        value="Cambio de contrato"></label>
+            <p>Elija la compañía actual: <select name="compañia">
+                    <option>Movistar</option>
+                    <option>Orange</option>
+                    <option>Vodafone</option>
+                    <option>No tengo compañia</option>
+                    <option>Yoigo</option>
+                </select> </p>
+            <p>Sin compañía, elija una: <select name="sin compañia">
+                    <option>Movistar</option>
+                    <option>Orange</option>
+                    <option>Vodafone</option>
+                    <option>Yoigo</option>
+                </select></p>
+        </fieldset>
 
-<fieldset>
-<legend>Datos bancarios </legend> 
+        <fieldset>
+            <legend>Datos bancarios </legend>
 
-<p><label>Pais <input id="pais" name="pais" maxlength="0"  readonly value="ES"/></label> </p>
-<P><label>Control IBAN <input id="iban" type="text" maxlength="2" oninput="OnRemoveLetters(event)"/></label></P>
-<p><label>Entidad <input id="entidad" type="text" maxlength="4" oninput="OnRemoveLetters(event)"/></label></p>
-<p><label>Sucursal <input id="sucursal" type="text" maxlength="4" oninput="OnRemoveLetters(event)"/></label></p>
-<p><label>DC <input id="dc" type="text" maxlength="2" oninput="OnRemoveLetters(event)" /></label></p>
-<p><label>Cuenta <input id="cuenta" type="text" maxlength="10" oninput="OnRemoveLetters(event)"/></label></p>
-</fieldset>
+            <p><label>Pais <input id="pais" name="pais" maxlength="0" readonly value="ES" /></label> </p>
+            <P><label>Control IBAN <input id="iban" type="text" maxlength="2"
+                        oninput="OnRemoveLetters(event)" /></label></P>
+            <p><label>Entidad <input id="entidad" type="text" maxlength="4" oninput="OnRemoveLetters(event)" /></label>
+            </p>
+            <p><label>Sucursal <input id="sucursal" type="text" maxlength="4"
+                        oninput="OnRemoveLetters(event)" /></label></p>
+            <p><label>DC <input id="dc" type="text" maxlength="2" oninput="OnRemoveLetters(event)" /></label></p>
+            <p><label>Cuenta <input id="cuenta" type="text" maxlength="10" oninput="OnRemoveLetters(event)" /></label>
+            </p>
+        </fieldset>
 
-<fieldset>
-    <legend>Datos Estadísticos ¿Cómo nos ha conocido?</legend>
-    <p><label>A través de la TV <input type="checkbox"/></label></p>
-    <p><label>A través de la radio <input type="checkbox"/></label></p>
-    <p><label>A través de Twitter <input type="checkbox"/></label></p>
-    <p><label>A través de Instagram <input type="checkbox"/></label></p>
-    <p><label>Otros <input type="checkbox"/></label></p>
+        <fieldset>
+            <legend>Datos Estadísticos ¿Cómo nos ha conocido?</legend>
+            <p><label>A través de la TV <input type="checkbox" /></label></p>
+            <p><label>A través de la radio <input type="checkbox" /></label></p>
+            <p><label>A través de Twitter <input type="checkbox" /></label></p>
+            <p><label>A través de Instagram <input type="checkbox" /></label></p>
+            <p><label>Otros <input type="checkbox" /></label></p>
 
-    <p><label>Valoración <input type="range" id="puntos" id="valoracion" name="valoracion"  min="1" max="5" /></label> 1 al 5</p>
-    <p><label>Fecha de encuesta <input id="date" type="date" value="2019-01-01" /></label></p>
-</fieldset>
-<input type="submit" value="Enviar">
-<input type="reset" value="Borrar">
-<br>
+            <p><label>Valoración <input type="range" id="puntos" id="valoracion" name="valoracion" min="1"
+                        max="5" /></label> 1 al 5</p>
+            <p><label>Fecha de encuesta <input id="date" type="date" value="2019-01-01" /></label></p>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        <br>
 
-<button type="button" onclick="imprimirValoracion()"> Mostrar valoracion</button>
-<button type="button" onclick="imprimirSuNumeroDeCuenta()">Mostrar cuenta</button>
+        <button type="button" onclick="imprimirValoracion()"> Mostrar valoracion</button>
+        <button type="button" onclick="imprimirSuNumeroDeCuenta()">Mostrar cuenta</button>
 
-<button type="button" onclick="imprimirFecha()">Dia de la semana </button>
-    <script>     
-        function imprimirFecha() 
-        {
-            var date=document.getElementById("date");
-            alert("La fecha es: " + date.value) ;
-        }
-
-        function imprimirValoracion() 
-        {
-            var puntos=document.getElementById("puntos");
-            alert("Su valoración es: " + puntos.value) ;
-        }
-
-        function imprimirSuNumeroDeCuenta()
-        {
-            var pais=document.getElementById("pais");
-            var iban=document.getElementById("iban");
-            var entidad=document.getElementById("entidad");
-            var sucursal=document.getElementById("sucursal");
-            var dc=document.getElementById("dc");
-            var cuenta=document.getElementById("cuenta");
-
-            alert("Su numero de cuenta: " + pais.value + iban.value + "-" + entidad.value + "-" + sucursal.value + "-" + dc.value + "-" + cuenta.value) ;
-        }
-
-        function OnRemoveLetters(event) 
-        {
-            event.target.value = event.target.value
-                .replace(/[^0-9.]/g, '')
-                .replace(/(\..*)\./g, '$1');
-        }
-
-            function darLocalidad(codigoPostal) 
-{
-        
-        var cps = {
-            "01" : "Alava",
-            "02" : "Albacete",
-            "03" : "Alicante",
-            "04" : "Almeria",
-            "05" : "Avila",
-            "06" : "Badajoz",
-            "07" : "Islas Baleares",
-            "08" : "Barcelona",
-            "09" : "Burgos",
-            "10" : "Caceres",
-            "11" : "Cadiz",
-            "12" : "Catellon",
-            "13" : "Ciudad Real",
-            "14" : "Cordoba",
-            "15" : "La Coruna",
-            "16" : "Cuenca",
-            "17" : "Gerona",
-            "18" : "Granada",
-            "19" : "Guadaljara",
-            "20" : "Guipuzcoa",
-            "21" : "Huelva",
-            "22" : "Huesca",
-            "23" : "Jaen",
-            "24" : "Leon",
-            "25" : "Lerida",
-            "26" : "La Rioja",
-            "27" : "Lugo",
-            "28" : "Madrid",
-            "29" : "Malaga",
-            "30" : "Murcia",
-            "31" : "Navarra",
-            "32" : "Orense",
-            "33" : "Asturias",
-            "34" : "Palencia",
-            "35" : "Las Palmas",
-            "36" : "Pontevedra",
-            "37" : "Salamanca",
-            "38" : "Santa Cruz de Tenerife",
-            "39" : "Cantabria",
-            "40" : "Segovia",
-            "41" : "Sevilla",
-            "42" : "Soria",
-            "43" : "Tarragona",
-            "44" : "Teruel",
-            "45" : "Toledo",
-            "46" : "Valencia",
-            "47" : "Valladolid",
-            "48" : "Vizcaya",
-            "49" : "Zamora",
-            "50" : "Zaragoza",
-            "51" : "Ceuta",
-            "52" : "Melilla"
-         };
-
-         if (codigoPostal.length == 5 && codigoPostal <= 52999 && codigoPostal >= 1000) return cps [
-             parseInt (codigoPostal.substring (0,2))
-         ];
-
-        else return "---";
-        
-         
-
-}
-
-        function imprimirCodigoPostal()
-        {
-            var codigoPostal=document.getElementById("codigoPostal").value;
-            var code=codigoPostal.substring(0,2)
-            var cp = cps[code];
-        
-            var localidad=document.getElementById("localidad").value;
-
-            
-        
-                if (CP == localidad) {
-				verde = document.createElement ("h1");
-				verde.textContent = localidad + ' ES CORRECTA';
-				verde.setAttribute ("id", "verde")
-				document.getElementById("resultado").appendChild(verde);
-				document.getElementById("verde").style.color = "#00e600";
-		
-			} else {
-	
-				rojo = document.createElement("h3");
-				rojo.textContent = localidad +  " ES ERRÓNEA";
-				rojo.setAttribute("id", "rojo");
-				document.getElementById("resultado").appendChild(rojo);
-				document.getElementById("rojo").style.color = "#ff0000";
-				}
+        <button type="button" onclick="imprimirFecha()">Dia de la semana </button>
+        <script>
+            function imprimirFecha() {
+                var date = document.getElementById("date");
+                alert("La fecha es: " + date.value);
             }
-        
-    </script>
 
-</form>
+            function imprimirValoracion() {
+                var puntos = document.getElementById("puntos");
+                alert("Su valoración es: " + puntos.value);
+            }
 
-<a href="https://developer.mozilla.org/es/docs/Learn/Forms/Your_first_form" >Pulse aquí para obtener ideas</a>
-<br>
-<footer>
-    Coded by Torichan
-</footer>
-    
+            function imprimirSuNumeroDeCuenta() {
+                var pais = document.getElementById("pais");
+                var iban = document.getElementById("iban");
+                var entidad = document.getElementById("entidad");
+                var sucursal = document.getElementById("sucursal");
+                var dc = document.getElementById("dc");
+                var cuenta = document.getElementById("cuenta");
 
-</div>
+                alert("Su numero de cuenta: " + pais.value + iban.value + "-" + entidad.value + "-" + sucursal.value + "-" + dc.value + "-" + cuenta.value);
+            }
+
+            function OnRemoveLetters(event) {
+                event.target.value = event.target.value
+                    .replace(/[^0-9.]/g, '')
+                    .replace(/(\..*)\./g, '$1');
+            }
+
+            var cps = {
+                "01": "Alava",
+                "02": "Albacete",
+                "03": "Alicante",
+                "04": "Almeria",
+                "05": "Avila",
+                "06": "Badajoz",
+                "07": "Islas Baleares",
+                "08": "Barcelona",
+                "09": "Burgos",
+                "10": "Caceres",
+                "11": "Cadiz",
+                "12": "Catellon",
+                "13": "Ciudad Real",
+                "14": "Cordoba",
+                "15": "La Coruna",
+                "16": "Cuenca",
+                "17": "Gerona",
+                "18": "Granada",
+                "19": "Guadaljara",
+                "20": "Guipuzcoa",
+                "21": "Huelva",
+                "22": "Huesca",
+                "23": "Jaen",
+                "24": "Leon",
+                "25": "Lerida",
+                "26": "La Rioja",
+                "27": "Lugo",
+                "28": "Madrid",
+                "29": "Malaga",
+                "30": "Murcia",
+                "31": "Navarra",
+                "32": "Orense",
+                "33": "Asturias",
+                "34": "Palencia",
+                "35": "Las Palmas",
+                "36": "Pontevedra",
+                "37": "Salamanca",
+                "38": "Santa Cruz de Tenerife",
+                "39": "Cantabria",
+                "40": "Segovia",
+                "41": "Sevilla",
+                "42": "Soria",
+                "43": "Tarragona",
+                "44": "Teruel",
+                "45": "Toledo",
+                "46": "Valencia",
+                "47": "Valladolid",
+                "48": "Vizcaya",
+                "49": "Zamora",
+                "50": "Zaragoza",
+                "51": "Ceuta",
+                "52": "Melilla"
+            };
+
+            function darLocalidad(codigoPostal) {
+                if (codigoPostal.length == 5 && codigoPostal <= 52999 && codigoPostal >= 1000)
+                    return cps[parseInt(codigoPostal.substring(0, 2))];
+                else
+                    return "---";
+            }
+
+            function imprimirCodigoPostal() {
+                var codigoPostal = document.getElementById("codigoPostal").value;
+                var code = codigoPostal.substring(0, 2)
+                var cp = cps[code];
+
+                var localidad = document.getElementById("localidad").value;
+
+                if (CP == localidad) {
+                    verde = document.createElement("h1");
+                    verde.textContent = localidad + ' ES CORRECTA';
+                    verde.setAttribute("id", "verde")
+                    document.getElementById("resultado").appendChild(verde);
+                    document.getElementById("verde").style.color = "#00e600";
+
+                } else {
+                    rojo = document.createElement("h3");
+                    rojo.textContent = localidad + " ES ERRÓNEA";
+                    rojo.setAttribute("id", "rojo");
+                    document.getElementById("resultado").appendChild(rojo);
+                    document.getElementById("rojo").style.color = "#ff0000";
+                }
+            }
+
+        </script>
+
+    </form>
+
+    <a href="https://developer.mozilla.org/es/docs/Learn/Forms/Your_first_form">Pulse aquí para obtener ideas</a>
+    <br>
+    <footer>
+        Coded by Torichan
+    </footer>
+
+
+    </div>
 
 </body>
+
 </html>
